@@ -1,9 +1,12 @@
-name: review
+name: review_breakdown
+version: 1.0.0
 description: A component for review breakdowns like at The Verge.
+author: pjv <ezelspinguin@gmail.com>
+homepage: https://github.com/pjjjv/ReviewBreakdownDart
 dependencies:
-  browser: any
-  polymer: any
+  browser: ">=0.10.0+2 <0.11.0"
+  polymer: ">=0.12.2+1 <0.13.0"
 transformers:
 - polymer:
     entry_points:
-    - web/review.html
+    - web/demo.html
