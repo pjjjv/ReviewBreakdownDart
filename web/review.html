@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Verge</title>
+
+    <!--<script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>-->
+    <link rel="import" href="packages/polymer/polymer.html">
+
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link rel="import" href="packages/review/review_breakdown.html">
+  </head>
+
+  <body unresolved vertical layout center>
+    <div style="width: 600px;">
+        <template is="auto-binding-dart" id="auto-bind">
+            <review-breakdown items="{{items}}">
+              <h4>The Breakdown</h4>
+              <p>More times than not, the Verge score is based on the average of the subscores below. However, since this is a non-weighted average, we reserve the right to tweak the overall score if we feel it doesn't reflect our overall assessment and price of the product. Read more about how we test and rate products.</p>
+            </review-breakdown>
+        </template>
+    </div>
+
+    <script src="main.dart" type="application/dart"></script>
+    <!--Not if own main: <script type="application/dart">export 'package:polymer/init.dart';</script>-->
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

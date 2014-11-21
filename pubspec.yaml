@@ -1,0 +1,9 @@
+name: review
+description: A component for review breakdowns like at The Verge.
+dependencies:
+  browser: any
+  polymer: any
+transformers:
+- polymer:
+    entry_points:
+    - web/review.html

@@ -1,0 +1,23 @@
+<link rel="import" href="../../packages/polymer/polymer.html">
+
+<polymer-element name="review-breakdown" attributes="items">
+<template>
+<link href='http://fonts.googleapis.com/css?family=Abel'
+  rel='stylesheet' type='text/css'>
+<link href="review_breakdown.css" rel="stylesheet">
+<div class="m-review__breakdown">
+
+  <content select="h4"></content>
+
+  <content class="blurb"></content>
+
+  <ul class="m-review__breakdown-meter">
+    <template repeat="{{item in items}}">
+    <li class="heat{{item['heat']}}"><em>{{item['label']}}</em>
+      {{item['heat']}}</li>
+    </template>
+  </ul>
+
+</div>
+</template> <script type="application/dart" src="review_breakdown.dart"></script> </polymer-element>
+
